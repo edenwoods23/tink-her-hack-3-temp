@@ -1,0 +1,109 @@
+{% extends 'skin/base.html' %}
+
+{% block title %}Create Skin Profile{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Create Your Seasonal Skin Profile</h2>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <!-- Summer Skin Type -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-header bg-warning text-dark">
+                                    <h5 class="mb-0">Summer</h5>
+                                </div>
+                                <div class="card-body">
+                                    <select name="summer_skin_type" class="form-select" required>
+                                        <option value="">Select summer skin type</option>
+                                        {% for value, label in skin_type_choices %}
+                                            <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Winter Skin Type -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-header bg-info text-dark">
+                                    <h5 class="mb-0">Winter</h5>
+                                </div>
+                                <div class="card-body">
+                                    <select name="winter_skin_type" class="form-select" required>
+                                        <option value="">Select winter skin type</option>
+                                        {% for value, label in skin_type_choices %}
+                                            <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monsoon Skin Type -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">Monsoon</h5>
+                                </div>
+                                <div class="card-body">
+                                    <select name="monsoon_skin_type" class="form-select" required>
+                                        <option value="">Select monsoon skin type</option>
+                                        {% for value, label in skin_type_choices %}
+                                            <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spring Skin Type -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">Spring</h5>
+                                </div>
+                                <div class="card-body">
+                                    <select name="spring_skin_type" class="form-select" required>
+                                        <option value="">Select spring skin type</option>
+                                        {% for value, label in skin_type_choices %}
+                                            <option value="{{ value }}">{{ label }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="concerns" class="form-label">Skin Concerns</label>
+                        <textarea name="concerns" id="concerns" class="form-control" rows="3" placeholder="e.g., acne, dark spots, aging, etc." required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="goals" class="form-label">Skincare Goals</label>
+                        <textarea name="goals" id="goals" class="form-control" rows="3" placeholder="What do you want to achieve with your skincare routine?" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="allergies" class="form-label">Allergies (Optional)</label>
+                        <textarea name="allergies" id="allergies" class="form-control" rows="2" placeholder="List any known allergies or sensitivities"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Create Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
