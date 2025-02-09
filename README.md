@@ -1,32 +1,31 @@
-# [Project Name] 🎯
+# Kira Skin 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Kira
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Raniya Abdul Gafoor - [SCMS SCHOOL OF TECHNOLOGY AND MANAGEMENT]
+- Member 2: Krishna S  - [SCMS SCHOOL OF TECHNOLOGY AND MANAGEMENT]
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[We tried to create a beauty analysis app which helps us record in our skin type and other details which will eventually generate recommended products based on our skin type.]
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+[well its not a world saving problem but it helps us skin obssesed people find the right products for our skin without the hassle or cost of consulting a dermatologist.]
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+[We are solving it by creating a beauty analysis app which helps us record in our skin type and other details, so basically saving you a frustrating trip to the clinic]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
+- [Python]
+- [Python, Django]
 - [Libraries used]
 - [Tools used]
 
@@ -47,14 +46,14 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](https://drive.google.com/drive/folders/1hhvH5eQfkGFtwYlzO1_j894qUCyxaAlB?usp=drive_link)
+*the screenshot skin1.jpg shows the skin profile analysis*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](https://drive.google.com/drive/folders/1hhvH5eQfkGFtwYlzO1_j894qUCyxaAlB?usp=drive_link)
+*the screenshot skin2.jpg shows the filters you can use to find the right product for the right skin type.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](https://drive.google.com/drive/folders/1hhvH5eQfkGFtwYlzO1_j894qUCyxaAlB?usp=drive_link)
+*The screenshot skin3.jpg shows the recommended product and the respective description and price*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -84,8 +83,8 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[https://drive.google.com/drive/folders/1hhvH5eQfkGFtwYlzO1_j894qUCyxaAlB?usp=drive_link]
+*The video explains how we added the products in the django adminstrator and how it showed up in the django produts webpage as we updated the products in the adminstrator*
 
 # Additional Demos
 [Add any extra demo materials/links]
